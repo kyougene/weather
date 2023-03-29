@@ -10,23 +10,23 @@
 <body>
     <div class="container">
         <div class="input-container">
-            <input type="text" id="location-input" placeholder="Search City" class="searched" required>
+            <input type="text" id="locationInput" class="location-input" placeholder="Search City" required>
         </div>
-        <div class="info-container">
+        <div class="info-container" id="infoContainer">
             <div class="current-info-container">
                 <div class="top-container">
-                    <div class="condition">Sunny</div>
-                    <div class="location">Tokyo, Japan</div>
+                    <div class="condition" id="currentCondition"></div>
+                    <div class="location" id="location"></div>
                 </div>
                 <div class="bottom-container">
                     <div class="left">
-                        <div class="temperature">66</div>
+                        <div class="temperature" id="currentTemperature"></div>
                         <div class="unit">°F</div>
                     </div>
                     <div class="right">
-                        <div class="feels-like">Feels Like: °66</div>
-                        <div class="wind">Wind: 5 MPH</div>
-                        <div class="humidity">Humidity: 50%</div>
+                        <div class="feels-like" id="currentFeelsLike"></div>
+                        <div class="wind" id="currentWind"></div>
+                        <div class="humidity" id="currentHumidity"></div>
                     </div>
                 </div>
             </div>
@@ -34,46 +34,46 @@
                 <div class="forecast-title">7 Day Forecast</div>
                 <div class="seven-day-forecast">
                     <div class="day" data-day="1">
-                        <div class="day-of-week">Sunday</div>
-                        <div class="high">10</div>
-                        <div class="low">23</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div>
                     <div class="day" data-day="2">
-                        <div class="day-of-week">Monday</div>
-                        <div class="high">23</div>
-                        <div class="low">5</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div>
                     <div class="day" data-day="3">
-                        <div class="day-of-week">Tuesday</div>
-                        <div class="high">32</div>
-                        <div class="low">32</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div>
                     <div class="day" data-day="4">
-                        <div class="day-of-week">Tuesday</div>
-                        <div class="high">32</div>
-                        <div class="low">32</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div>
                     <div class="day" data-day="5">
-                        <div class="day-of-week">Tuesday</div>
-                        <div class="high">32</div>
-                        <div class="low">32</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div> 
                     <div class="day" data-day="6">
-                        <div class="day-of-week">Tuesday</div>
-                        <div class="high">32</div>
-                        <div class="low">32</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div>
                     <div class="day" data-day="7">
-                        <div class="day-of-week">Tuesday</div>
-                        <div class="high">32</div>
-                        <div class="low">32</div>
-                        <div class="condition">Sunny</div>
+                        <div class="day-of-week"></div>
+                        <div class="high"></div>
+                        <div class="low"></div>
+                        <div class="condition"></div>
                     </div>
                 </div>
             </div>

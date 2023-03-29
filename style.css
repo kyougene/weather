@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow-x: hidden;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
     align-items: center;
 }
 
-#location-input {
+.location-input {
     border: none;
     background-color: rgba(0, 0, 0, .2);
     border-radius: 5px;
@@ -37,15 +38,21 @@ body {
     padding: 1%;
 }
 
-#location-input::placeholder {
+.location-input::placeholder {
     color: white;
     text-align: left;
 }
 
 .info-container {
-    display: grid;
+    display: none;
     grid-template-columns: 100%;
     grid-template-rows: 60% 40%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.info-container.dim {
+    opacity: 0;
 }
 
 .info-container>.current-info-container {
@@ -134,10 +141,13 @@ body {
 
 
 .seven-day-forecast {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 90%;
+    grid-gap: 3%;
     height: 70%;
     width: 100%;
+    padding: 1%;
 }
 
 .day {
@@ -146,8 +156,9 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2%;
+    text-align: center;
 }
 
 .day-of-week {
